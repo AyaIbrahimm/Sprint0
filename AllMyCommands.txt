@@ -1,0 +1,19 @@
+git init
+git commit -m "Creating a new repo"
+git add .
+git commit -m "Adding new files to repo"
+git rm 'Section 3.1.pdf'
+git commit -m "Deleting Section 3.1.pdf"
+git reset --hard Head^
+git commit -m "Restoring Section 3.1.pdf back"
+git remote add origin https://github.com/AyaIbrahimm/Sprint0.git
+git push -u origin master
+git branch ReadMe
+git commit -, "Creating new branch ReadMe"
+git checkout ReadMe
+git add 'README.md.txt'
+git commit -m "Adding README file to the branch"
+git checkout master 
+git merge ReadMe
+git commit -m "Merging the ReadMe branch with the master"
+git push -u origin master
